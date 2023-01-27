@@ -3,12 +3,16 @@ body {
     margin: 0;
     padding: 0;
 }
+:root {
+    --color_purple: #6c3ec1;
+    --white: #ffffff;
+}
 
 /* common css  */
 
 /* navbar start */
 .navbar {
-    background-color: #6c3ec1;
+    background-color: var(--color_purple);
     /* --bs-bg-opacity: 0.5; */
 }
 .nav-item {
@@ -23,3 +27,17 @@ body {
     color: #ffffff;
 }
 /* navbar end */
+
+/* foooter start  */
+footer {
+    background-color: var(--color_purple);
+}
+footer li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+footer li,
+footer li a {
+    color: var(--white);
+}
+/* foooter end  */
