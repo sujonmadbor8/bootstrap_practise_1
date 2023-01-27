@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>bootstrap</title>
+
+        <!-- bootstrap cdn  -->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+
+        <!-- custom css  -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/media_query.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-gradient">
+                <div class="container-md">
+                    <a class="navbar-brand" href="index.html"
+                        ><img src="images/logo.png" class="w-75" alt=""
+                    /></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03"
+                        aria-controls="navbarTogglerDemo03"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarTogglerDemo03"
+                    >
+                        <ul class="navbar-nav ms-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active text-white"
+                                    aria-current="page"
+                                    href="#"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="pages/about_us/about_us.html"
+                                    >About us</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="pages/portfolio/portfolio.html"
+                                    >Portfolio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="pages/contact_us/contact_us.html"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h2 class="display-6 text-center pt-3">Form Validation</h2>
+            <section class="container bg-success-subtle">
+                <form class="row g-3 m-5 p-5 needs-validation" novalidate>
+                    <div class="col-md-4 position-relative">
+                        <label for="f_name" class="form-label"
+                            >First name</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control f_name"
+                            id="f_name"
+                            name="f_name"
+                            placeholder="Enter your First Name"
+                            required
+                        />
+                        <div class="valid-tooltip">Looks good!</div>
+                        <div class="invalid-tooltip">
+                            Please Enter your First Name
+                        </div>
+                    </div>
+                    <div class="col-md-4 position-relative">
+                        <label for="l_name" class="form-label">Last name</label>
+                        <input
+                            type="text"
+                            class="form-control l_name"
+                            id="l_name"
+                            name="l_name"
+                            placeholder="Enter your Last Name"
+                            required
+                        />
+                        <div class="valid-tooltip">Looks good!</div>
+                        <div class="invalid-tooltip">
+                            Please Enter your Last Name
+                        </div>
+                    </div>
+                    <div class="col-md-4 position-relative">
+                        <label for="username" class="form-label"
+                            >Username</label
+                        >
+                        <div class="input-group has-validation">
+                            <span
+                                class="input-group-text"
+                                id="validationTooltipUsernamePrepend"
+                                >@</span
+                            >
+                            <input
+                                type="text"
+                                class="form-control username"
+                                id="username"
+                                name="username"
+                                placeholder="Enter your username"
+                                aria-describedby="validationTooltipUsernamePrepend"
+                                required
+                            />
+                            <div class="valid-tooltip">Looks good!</div>
+                            <div class="invalid-tooltip">
+                                Please choose a unique and valid username.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 position-relative">
+                        <label for="email" class="form-label">Email </label>
+                        <input
+                            type="email"
+                            class="form-control email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your Email address"
+                            required
+                        />
+                        <div class="valid-tooltip">Looks good!</div>
+                        <div class="invalid-tooltip">
+                            Please Enter valid Email address
+                        </div>
+                    </div>
+                    <div class="col-md-6 position-relative">
+                        <label for="city" class="form-label">City</label>
+                        <input
+                            type="text"
+                            class="form-control city"
+                            id="city"
+                            placeholder="Enter your City"
+                            required
+                        />
+                        <div class="valid-tooltip">Looks good!</div>
+                        <div class="invalid-tooltip">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3 position-relative">
+                        <label for="state" class="form-label">State</label>
+                        <select
+                            class="form-select state"
+                            id="state"
+                            name="state"
+                            required
+                        >
+                            <option selected disabled value="">
+                                Choose...
+                            </option>
+                            <option selected>Dhaka</option>
+                            <option>Barishal</option>
+                            <option>Shylhet</option>
+                        </select>
+                        <div class="valid-tooltip">Looks good!</div>
+                        <div class="invalid-tooltip">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3 position-relative">
+                        <label for="zip" class="form-label">Zip</label>
+                        <input
+                            type="number"
+                            class="form-control zip"
+                            id="zip"
+                            name="zip"
+                            placeholder="Enter Zip code"
+                            required
+                        />
+                        <div class="valid-tooltip">Looks good!</div>
+                        <div class="invalid-tooltip">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <button class="btn btn-primary" type="submit">
+                            Submit form
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <!-- bootstrap js  -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
