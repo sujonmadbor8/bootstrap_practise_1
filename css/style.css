@@ -36,6 +36,9 @@ footer li {
     display: inline-block;
     margin-right: 1rem;
 }
+footer li:last-child {
+    margin-right: 0;
+}
 footer li,
 footer li a {
     color: var(--white);
