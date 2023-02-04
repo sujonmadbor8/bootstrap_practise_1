@@ -29,6 +29,9 @@ body {
 /* navbar end */
 
 /* foooter start  */
+.margin_top {
+    margin-top: 347px;
+}
 footer {
     background-color: var(--color_purple);
 }
